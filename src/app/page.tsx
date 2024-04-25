@@ -1,7 +1,9 @@
+import { Header } from '@/components';
+
 export default function Home() {
 	return (
 		<main>
-			<a>Start project</a>
+			<Header />
 		</main>
 	);
 }

@@ -1,5 +1,4 @@
 import type { Config } from 'tailwindcss';
-import defaultTheme from 'tailwindcss/defaultTheme';
 
 const config: Config = {
 	content: [
@@ -17,8 +16,16 @@ const config: Config = {
 		},
 		screens: {
 			xs: '320px',
-			...defaultTheme.screens,
 			sm: '480px',
+			md: '768px',
+			xl: '1280px',
+		},
+		container: {
+			center: true,
+			padding: {
+				DEFAULT: '0px',
+				xl: '24px',
+			},
 		},
 		extend: {
 			backgroundImage: {},

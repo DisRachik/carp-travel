@@ -13,6 +13,7 @@ const config: Config = {
 			white: '#ffffff',
 			light: '#D9D9D9',
 			error: '#FF5757',
+			mobMenu: '#010A05',
 		},
 		screens: {
 			xs: '320px',

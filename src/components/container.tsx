@@ -8,7 +8,7 @@ export interface IContainerProps {
 }
 
 const Container: React.FC<IContainerProps> = ({ children, className }) => {
-	return <div className={clsx('sm:container ', className)}>{children}</div>;
+	return <div className={clsx('sm:container', className)}>{children}</div>;
 };
 
 export default Container;

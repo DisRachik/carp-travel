@@ -9,14 +9,8 @@ export interface INavItemProps {
 
 const NavItem = ({ id, title }: INavItemProps) => {
 	return (
-		<li key={id} className='flex h-full items-center'>
-			<Link
-				to={title}
-				smooth={true}
-				duration={500}
-				href='/'
-				className='text-lg tracking-widest first-letter:uppercase md:text-sm'
-			>
+		<li key={id} className='items-center md:flex md:h-full'>
+			<Link to={title} smooth={true} duration={500} href='/' className='text-lg capitalize tracking-widest md:text-sm'>
 				{title}
 			</Link>
 		</li>

@@ -1,9 +1,9 @@
-import { Header } from '@/components';
+import HeroSection from './@hero/page';
 
 export default function Home() {
 	return (
-		<main>
-			<Header />
-		</main>
+		<>
+			<HeroSection />
+		</>
 	);
 }

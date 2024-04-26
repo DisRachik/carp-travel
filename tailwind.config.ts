@@ -14,9 +14,9 @@ const config: Config = {
 			light: '#D9D9D9',
 			error: '#FF5757',
 			mobMenu: '#010A05',
+			bgColor: '#020F08',
 		},
 		screens: {
-			xs: '320px',
 			sm: '480px',
 			md: '768px',
 			xl: '1280px',
@@ -24,7 +24,9 @@ const config: Config = {
 		container: {
 			center: true,
 			padding: {
-				DEFAULT: '0px',
+				DEFAULT: '20px',
+				sm: '0px',
+				md: '32px',
 				xl: '24px',
 			},
 		},

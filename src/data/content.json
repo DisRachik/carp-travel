@@ -1,0 +1,113 @@
+{
+	"hero": {
+		"pretitle": "7 DAYS JOURNEY",
+		"title": "Uncover Carpathian’s Secrets",
+		"places": ["Hoverla", "Yaremche", "Zakarpattia", "Vorokhta", "Synevyr Lake", "Bukovel"],
+		"text": "We offer you unforgettable trips to the most beautiful parts of the Carpathians. Enjoy stunning views, exciting expeditions, and the best service!"
+	},
+	"about": {
+		"title": "WHO WE ARE",
+		"text": [
+			"a team of enthusiasts who are fully committed to the mission of creating unforgettable and extraordinary trips to the most beautiful parts of the Carpathians. Our goal is not just to show you the natural wonders of the mountains, but to provide you with a deep immersion in their magical atmosphere.",
+			"We believe that nature has the power to inspire, strengthen character and provide new perspectives. Therefore, each of our tours is aimed at unlocking your potential, enriching your spiritual world and creating unforgettable memories.",
+			"We use methods that are time-tested and proven. Our expert guides with in-depth knowledge of the Carpathian landscapes lead you safely through the mysteries of these mountains. "
+		],
+		"motto": ["From vacationers", "to active travelers", "we have a tour for everyone."]
+	},
+	"services": {
+		"title": "WE OFFER",
+		"cards": [
+			{
+				"id": "1",
+				"title": "ATVs Traveling",
+				"action": "Feel the adrenaline rush",
+				"description": "Join exciting rafting expeditions on the waterways of the Carpathians. Go through challenging waterways and overcome gusty waves, feel the adrenaline, and enjoy the incredible views of the surrounding mountains.",
+				"image": "/images/services/services-card-1.jpg"
+			},
+			{
+				"id": "2",
+				"title": "Rock climbing",
+				"action": "Destroy your limitations",
+				"description": "Overcome the peaks of the Carpathians in a unique way - climbing. Make your own way to the heights and find inner peace in the embrace of the mighty rocks.",
+				"image": "/images/services/services-card-2.jpg"
+			},
+			{
+				"id": "3",
+				"title": "Hot air ballooning",
+				"action": "Get inspired",
+				"description": "Feel Zen over the mountain peaks! Hot air ballooning gives you incredible impressions and panoramas of the Carpathians that seem endless.",
+				"image": "/images/services/services-card-3.jpg"
+			},
+			{
+				"id": "4",
+				"title": "Skydiving",
+				"action": "Overcome your fears",
+				"description": "Fly in the sky over the Carpathians! Experienced instructors will help you realize your dream of free flight. Remember the incredible emotions and panoramas from a bird's eye view forever.",
+				"image": "/images/services/services-card-4.jpg"
+			},
+			{
+				"id": "5",
+				"title": "Rafting",
+				"action": "Trust the flow",
+				"description": "Join exciting rafting expeditions on the waterways of the Carpathians. Go through challenging waterways and overcome gusty waves, feel the adrenaline, and enjoy the incredible views of the surrounding mountains.",
+				"image": "/images/services/services-card-5.jpg"
+			}
+		]
+	},
+	"career": {
+		"title": "WE OFFER",
+		"subtitle": "Why us ?",
+		"theses": [
+			{
+				"thesis": "Professional development",
+				"argument": "We offer growth opportunities and a creative environment to nurture your talents."
+			},
+			{ "thesis": "Teamwork", "argument": "Join our close-knit family, where support and inspiration abound." },
+			{
+				"thesis": "Stimulating work environment",
+				"argument": "Flexibility and remote options for a comfortable experience."
+			},
+			{
+				"thesis": "Exciting challenges",
+				"argument": "Unleash your potential through unforgettable projects showcasing Carpathian beauty."
+			}
+		],
+		"text": [
+			"Your chance to join our passionate team in Carpathian tourism. Seeking talented professionals to share our common mission.",
+			"Don't miss your opportunity! Fill out the form right now and join our team!"
+		]
+	},
+	"gallery": {
+		"title": "OUR GALLERY",
+		"cards": [
+			{
+				"id": "1",
+				"image": "/images/gallery/gallery-card-1.jpg"
+			},
+			{
+				"id": "2",
+				"image": "/images/gallery/gallery-card-2.jpg"
+			},
+			{
+				"id": "3",
+				"image": "/images/gallery/gallery-card-3.jpg"
+			}
+		]
+	},
+	"contacts": {
+		"title": "CONTACT US",
+		"contacts": {
+			"phones": ["38 (098) 12 34 567", "+38 (073) 12 34 567"],
+			"phonesTitle": "Phone number",
+			"email": "support@carptravel.com",
+			"emailTitle": "E-mail",
+			"socialsTitle": "Follow us"
+		},
+		"socials": [
+			{ "text": "facebook", "href": "https://www.facebook.com/" },
+			{ "text": "instagram", "href": "https://www.instagram.com/" },
+			{ "text": "youtube", "href": "https://www.youtube.com/" },
+			{ "text": "tiktok", "href": "https://www.tiktok.com/" }
+		]
+	}
+}

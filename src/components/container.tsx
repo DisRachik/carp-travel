@@ -1,5 +1,3 @@
-// import styles from "./Container.module.css"
-
 import clsx from 'clsx';
 
 export interface IContainerProps {
@@ -7,8 +5,8 @@ export interface IContainerProps {
 	className?: string;
 }
 
-const Container: React.FC<IContainerProps> = ({ children, className }) => {
-	return <div className={clsx('sm:container', className)}>{children}</div>;
+const Container: React.FC<IContainerProps> = ({ className, children }) => {
+	return <div className={clsx('container outline outline-1', className)}>{children}</div>;
 };
 
 export default Container;

@@ -1,1 +1,1 @@
-export { prepareTitle } from './prepareTitle';
+export { prepareText } from './prepareText';

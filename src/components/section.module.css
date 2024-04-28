@@ -9,6 +9,7 @@
 			url('../../public/images/hero/hero-bg.jpg') 1x
 		);
 	background-repeat: no-repeat;
+	background-position: center;
 	background-size: cover;
 }
 .bg-about {
@@ -22,7 +23,18 @@
 			url('../../public/images/about/about-bg.jpg') 1x
 		);
 	background-repeat: no-repeat;
+	background-position: 20% 100%;
 	background-size: cover;
+}
+@media screen and (min-width: 460px) {
+	.bg-about {
+		background-position: 15% 100%;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.bg-about {
+		background-position: 0 100%;
+	}
 }
 .bg-services {
 	background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),

@@ -9,3 +9,4 @@ export { default as Title } from './title';
 export { default as ButtonScroll } from './buttons/button-scroll';
 
 export { default as HtmlElFactory } from './html-el-factory';
+export { default as InfoAboutUs } from './info-about-us';

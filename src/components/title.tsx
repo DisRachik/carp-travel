@@ -1,53 +1,26 @@
-import { prepareTitle } from '@/helpers';
-import { section } from './section';
 import clsx from 'clsx';
+import { prepareTitle } from '@/helpers';
+import { HtmlElFactory } from '@/components/';
+import { section } from '@/components/section';
+import { IHtmlElFactoryProps } from '@/components/html-el-factory';
 
-export interface ITitleProps {
+export interface ITitleProps extends IHtmlElFactoryProps {
 	sectionName: section;
-	elementName: string;
-	className?: string;
 	children: string;
 }
 
-interface IHtmlElementFactoryProps {
-	el: string;
-	className: string;
-	children: React.ReactNode;
-}
-
-const HtmlElementFactory = ({ el, className, children }: IHtmlElementFactoryProps) => {
-	switch (el) {
-		case 'h1':
-			return <h1 className={className}>{children}</h1>;
-		case 'h2':
-			return <h2 className={className}>{children}</h2>;
-		case 'h3':
-			return <h3 className={className}>{children}</h3>;
-		case 'span':
-			return (
-				<span
-					className={clsx(
-						className,
-						'text-[37px] uppercase leading-normal tracking-[1.665px] md:tracking-[8.71px] xl:tracking-normal',
-					)}
-				>
-					{children}
-				</span>
-			);
-
-		default:
-			return null;
-	}
-};
-
-const Title: React.FC<ITitleProps> = ({ sectionName, elementName = 'h2', className, children }) => {
+const Title: React.FC<ITitleProps> = ({ sectionName, elementName, className, children }) => {
 	const [firstWordOfTitle, nextTitle] = prepareTitle(children);
 
 	return (
-		<HtmlElementFactory
-			el={elementName}
+		<HtmlElFactory
+			elementName={elementName}
 			className={clsx(
-				'text-[40px] font-thin uppercase leading-[1.4] tracking-[-1.6px] md:text-[67px] md:leading-tight md:tracking-[-2.68px] xl:text-[98px] xl:tracking-[-3.92px]',
+				'font-thin uppercase md:text-[67px] xl:text-[98px]',
+				(elementName === 'h1' || elementName === 'h1') &&
+					'text-[40px]  leading-[1.4] tracking-[-1.6px] md:leading-tight md:tracking-[-2.68px] xl:tracking-[-3.92px]',
+				elementName === 'span' &&
+					'text-[37px] leading-normal tracking-[1.665px] md:tracking-[8.71px] xl:tracking-normal',
 				className,
 			)}
 		>
@@ -62,7 +35,7 @@ const Title: React.FC<ITitleProps> = ({ sectionName, elementName = 'h2', classNa
 					</>
 				)}
 			</>
-		</HtmlElementFactory>
+		</HtmlElFactory>
 	);
 };
 

@@ -20,7 +20,7 @@ const NavMenu = () => {
 		<nav
 			className={clsx(
 				isMobileOpen &&
-					'absolute right-0 top-0 min-h-dvh w-dvw bg-mobMenu/75 px-5 py-11 text-right backdrop-blur-[25px]',
+					'absolute right-0 top-0 min-h-dvh w-full bg-mobMenu/75 px-5 py-11 text-right backdrop-blur-[25px]',
 			)}
 		>
 			<div className={clsx('h-full', isMobileOpen && 'container space-y-[110px]')}>

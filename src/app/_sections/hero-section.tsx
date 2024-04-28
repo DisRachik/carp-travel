@@ -7,12 +7,12 @@ const { title, slogan, places, text } = content.hero;
 const HeroSection = () => {
 	return (
 		<Section sectionTitle={section.Hero} className='pt-[105px] md:pt-[122px] xl:pb-[104px] xl:pt-[130px]'>
-			<Container className='grid grid-cols-2 gap-y-6 md:relative md:grid-cols-[1fr_230px] md:gap-y-7 xl:grid-cols-[1fr_295px]'>
-				<p className='col-start-2 flex flex-col items-end justify-center md:order-2 md:pb-[31px] xl:pb-[149px]'>
+			<Container className='grid grid-cols-2 gap-y-6 md:grid-cols-[1fr_230px] md:gap-y-7 xl:grid-cols-[1fr_295px]'>
+				<p className='col-start-2 flex flex-col items-center justify-center md:order-2 md:pb-[31px] xl:pb-[149px]'>
 					<Title sectionName={section.Hero} elementName='span' className='flex h-[45px] md:h-[88px] xl:h-[123px]'>
 						{slogan[0]}
 					</Title>
-					<span className='text-xs font-light tracking-[9.48px] md:mt-[-14px] md:w-full md:text-sm md:leading-none md:tracking-[25.9px] xl:text-base xl:tracking-[34px] '>
+					<span className='w-[118px] text-xs font-light tracking-[9.48px] md:mt-[-8px] md:w-full md:text-sm md:leading-none md:tracking-[25.9px] xl:text-base xl:tracking-[34px] '>
 						{slogan[1]}
 					</span>
 				</p>

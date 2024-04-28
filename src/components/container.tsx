@@ -6,7 +6,7 @@ export interface IContainerProps {
 }
 
 const Container: React.FC<IContainerProps> = ({ className, children }) => {
-	return <div className={clsx('container outline outline-1', className)}>{children}</div>;
+	return <div className={clsx('container', className)}>{children}</div>;
 };
 
 export default Container;

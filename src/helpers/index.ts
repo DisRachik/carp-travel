@@ -1,0 +1,1 @@
+export { prepareTitle } from './prepareTitle';

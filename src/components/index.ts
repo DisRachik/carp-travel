@@ -1,4 +1,7 @@
+export { default as Section } from './section';
 export { default as Container } from './container';
+export { default as Title } from './title';
+export { default as ButtonScroll } from './buttons/button-scroll';
 
 export { default as Header } from './header';
 export { default as NavItem } from './nav-item';

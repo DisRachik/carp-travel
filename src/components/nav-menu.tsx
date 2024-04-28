@@ -1,12 +1,18 @@
 'use client';
 
+import { useEffect, useState } from 'react';
+import clsx from 'clsx';
 import { NavItem, BurgerMenuBtn } from '@/components';
 import { sectionName } from '@/constants';
-import clsx from 'clsx';
-import { useState } from 'react';
+import { useScreenSize } from '@/hooks';
 
 const NavMenu = () => {
-	const [isMobileOpen, setIsMobileOpen] = useState(false);
+	const [isMobileOpen, setIsMobileOpen] = useState<boolean>(false);
+	const { isMobile } = useScreenSize();
+
+	useEffect(() => {
+		!isMobile && setIsMobileOpen(false);
+	}, [isMobile]);
 
 	const toggleMobileMenu = () => setIsMobileOpen(prevState => !prevState);
 
@@ -14,7 +20,7 @@ const NavMenu = () => {
 		<nav
 			className={clsx(
 				isMobileOpen &&
-					'bg-mobMenu/75 absolute right-0 top-0 min-h-dvh w-dvw px-5 py-11 text-right backdrop-blur-[25px]',
+					'absolute right-0 top-0 min-h-dvh w-dvw bg-mobMenu/75 px-5 py-11 text-right backdrop-blur-[25px]',
 			)}
 		>
 			<div className={clsx('h-full', isMobileOpen && 'container space-y-[110px]')}>
@@ -27,7 +33,7 @@ const NavMenu = () => {
 					)}
 				>
 					{sectionName.map(({ id, title }) => (
-						<NavItem key={id} id={id} title={title} />
+						<NavItem key={id} id={id} title={title} onClick={toggleMobileMenu} isMobileOpen={isMobileOpen} />
 					))}
 				</ul>
 			</div>

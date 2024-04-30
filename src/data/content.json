@@ -87,15 +87,18 @@
 		"cards": [
 			{
 				"id": "1",
-				"image": "/images/gallery/gallery-card-1.jpg"
+				"image": "/images/gallery/gallery-card-1.jpg",
+				"alt": "The lake in the mountain in the middle of the forest"
 			},
 			{
 				"id": "2",
-				"image": "/images/gallery/gallery-card-2.jpg"
+				"image": "/images/gallery/gallery-card-2.jpg",
+				"alt": "The mountain river near the road"
 			},
 			{
 				"id": "3",
-				"image": "/images/gallery/gallery-card-3.jpg"
+				"image": "/images/gallery/gallery-card-3.jpg",
+				"alt": "overlook to the peak of some mountain"
 			}
 		]
 	},

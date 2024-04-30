@@ -1,33 +1,40 @@
 import { useEffect, useState } from 'react';
 
-type UseScreenSize = { isMobile: boolean | null; isDesktop: boolean | null };
+type UseScreenSize = { isMobile: boolean | null; isSmall: boolean | null };
 
 export function useScreenSize(): UseScreenSize {
 	const [isMobile, setIsMobile] = useState<boolean | null>(null);
-	const [isDesktop, setIsDesktop] = useState<boolean | null>(null);
+	const [isSmall, setIsSmall] = useState<boolean | null>(null);
 
 	useEffect(() => {
-		const smallMediaQuery = window.matchMedia('(max-width: 767px)');
-		setIsMobile(smallMediaQuery.matches);
+		const mobileMediaQuery = window.matchMedia('(max-width: 767px)');
+		setIsMobile(mobileMediaQuery.matches);
 
-		const bigMediaQuery = window.matchMedia('(min-width: 1280px)');
-		setIsDesktop(bigMediaQuery.matches);
-
-		const handleSmallChange = () => {
+		const handleMobileChange = () => {
 			setIsMobile(prevState => !prevState);
 		};
-		const handleBigChange = () => {
-			setIsDesktop(prevState => !prevState);
+
+		mobileMediaQuery.addEventListener('change', handleMobileChange);
+
+		return () => {
+			mobileMediaQuery.removeEventListener('change', handleMobileChange);
+		};
+	}, [isMobile]);
+
+	useEffect(() => {
+		const smallMediaQuery = window.matchMedia('(max-width: 480px)');
+		setIsSmall(smallMediaQuery.matches);
+
+		const handleSmallChange = () => {
+			setIsSmall(prevState => !prevState);
 		};
 
 		smallMediaQuery.addEventListener('change', handleSmallChange);
-		bigMediaQuery.addEventListener('change', handleBigChange);
 
 		return () => {
-			smallMediaQuery.removeEventListener('change', handleSmallChange);
-			bigMediaQuery.addEventListener('change', handleBigChange);
+			smallMediaQuery.addEventListener('change', handleSmallChange);
 		};
-	}, []);
+	}, [isSmall]);
 
-	return { isMobile, isDesktop };
+	return { isMobile, isSmall };
 }

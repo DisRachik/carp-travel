@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import styles from './section.module.css';
+import styles from '@/styles/section.module.css';
 import { HtmlElFactory } from '@/components/';
 
 export enum section {

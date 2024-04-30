@@ -1,6 +1,6 @@
 .bg-hero {
-	background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)), url('/images/hero/hero-bg.jpg');
-	background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+	background-image: linear-gradient(180deg, rgb(0, 24, 38) 0%, rgba(0, 37, 49, 0) 100%), url('/images/hero/hero-bg.jpg');
+	background-image: linear-gradient(180deg, rgb(0, 24, 38) 0%, rgba(0, 37, 49, 0) 100%),
 		image-set(
 			url('/images/hero/hero-bg@2x.webp') 2x,
 			url('/images/hero/hero-bg.webp') 1x,
@@ -10,10 +10,12 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	background-color: rgba(2, 15, 8, 0.5);
 }
 .bg-about {
-	background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)), url('/images/about/about-bg.jpg');
-	background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+	background-image: linear-gradient(180deg, rgb(0, 24, 38) 0%, rgba(0, 37, 49, 0) 100%),
+		url('/images/about/about-bg.jpg');
+	background-image: linear-gradient(180deg, rgb(0, 24, 38) 0%, rgba(0, 37, 49, 0) 100%),
 		image-set(
 			url('/images/about/about-bg@2x.webp') 2x,
 			url('/images/about/about-bg.webp') 1x,
@@ -23,6 +25,7 @@
 	background-repeat: no-repeat;
 	background-position: 20% 100%;
 	background-size: cover;
+	background-color: rgba(2, 15, 8, 0.5);
 }
 @media screen and (min-width: 460px) {
 	.bg-about {
@@ -38,8 +41,9 @@
 	background-color: #0a1813;
 }
 .bg-career {
-	background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)), url('/images/career/career-bg.jpg');
-	background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+	background-image: linear-gradient(180deg, rgb(0, 24, 38) 0%, rgba(0, 37, 49, 0) 100%),
+		url('/images/career/career-bg.jpg');
+	background-image: linear-gradient(180deg, rgb(0, 24, 38) 0%, rgba(0, 37, 49, 0) 100%),
 		image-set(
 			url('/images/career/career-bg@2x.webp') 2x,
 			url('/images/career/career-bg.webp') 1x,
@@ -48,10 +52,12 @@
 		);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-color: rgba(2, 15, 8, 0.5);
 }
 .bg-gallery {
-	background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)), url('/images/gallery/gallery-bg.jpg');
-	background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+	background-image: linear-gradient(180deg, rgb(0, 24, 38) 0%, rgba(0, 37, 49, 0) 100%),
+		url('/images/gallery/gallery-bg.jpg');
+	background-image: linear-gradient(180deg, rgb(0, 24, 38) 0%, rgba(0, 37, 49, 0) 100%),
 		image-set(
 			url('/images/gallery/gallery-bg@2x.webp') 2x,
 			url('/images/gallery/gallery-bg.webp') 1x,
@@ -60,10 +66,12 @@
 		);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-color: rgba(2, 15, 8, 0.5);
 }
 .bg-contacts {
-	background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)), url('/images/contacts/contacts-bg.jpg');
-	background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+	background-image: linear-gradient(180deg, rgb(0, 24, 38) 0%, rgba(0, 37, 49, 0) 100%),
+		url('/images/contacts/contacts-bg.jpg');
+	background-image: linear-gradient(180deg, rgb(0, 24, 38) 0%, rgba(0, 37, 49, 0) 100%),
 		image-set(
 			url('/images/contacts/contacts-bg@2x.webp') 2x,
 			url('/images/contacts/contacts-bg.webp') 1x,
@@ -72,4 +80,5 @@
 		);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-color: rgba(2, 15, 8, 0.5);
 }

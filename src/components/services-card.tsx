@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import clsx from 'clsx';
-import styles from './services-card.module.css';
+import styles from '@/styles/services-card.module.css';
 import { useSwiper } from 'swiper/react';
 
 import 'swiper/css/effect-fade';

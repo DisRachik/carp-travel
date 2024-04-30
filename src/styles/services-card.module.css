@@ -11,8 +11,9 @@
 }
 
 .bg-services__1 {
-	background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)), url('/images/services/services-bg-1.jpg');
-	background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+	background-image: linear-gradient(180deg, rgb(0, 24, 38) 0%, rgba(0, 37, 49, 0) 100%),
+		url('/images/services/services-bg-1.jpg');
+	background-image: linear-gradient(180deg, rgb(0, 24, 38) 0%, rgba(0, 37, 49, 0) 100%),
 		image-set(
 			url('/images/services/services-bg-1@2x.webp') 2x,
 			url('/images/services/services-bg-1.webp') 1x,
@@ -21,11 +22,13 @@
 		);
 	background-repeat: no-repeat;
 	background-position: 77% 100%;
+	background-color: rgba(2, 15, 8, 0.5);
 	background-size: cover;
 }
 .bg-services__2 {
-	background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)), url('/images/services/services-bg-1.jpg');
-	background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+	background-image: linear-gradient(180deg, rgb(0, 24, 38) 0%, rgba(0, 37, 49, 0) 100%),
+		url('/images/services/services-bg-1.jpg');
+	background-image: linear-gradient(180deg, rgb(0, 24, 38) 0%, rgba(0, 37, 49, 0) 100%),
 		image-set(
 			url('/images/services/services-bg-2@2x.webp') 2x,
 			url('/images/services/services-bg-2.webp') 1x,
@@ -34,11 +37,13 @@
 		);
 	background-repeat: no-repeat;
 	background-position: center;
+	background-color: rgba(2, 15, 8, 0.5);
 	background-size: cover;
 }
 .bg-services__3 {
-	background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)), url('/images/services/services-bg-1.jpg');
-	background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+	background-image: linear-gradient(180deg, rgb(0, 24, 38) 0%, rgba(0, 37, 49, 0) 100%),
+		url('/images/services/services-bg-1.jpg');
+	background-image: linear-gradient(180deg, rgb(0, 24, 38) 0%, rgba(0, 37, 49, 0) 100%),
 		image-set(
 			url('/images/services/services-bg-3@2x.webp') 2x,
 			url('/images/services/services-bg-3.webp') 1x,
@@ -47,11 +52,13 @@
 		);
 	background-repeat: no-repeat;
 	background-position: 68% 100%;
+	background-color: rgba(2, 15, 8, 0.5);
 	background-size: cover;
 }
 .bg-services__4 {
-	background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)), url('/images/services/services-bg-1.jpg');
-	background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+	background-image: linear-gradient(180deg, rgb(0, 24, 38) 0%, rgba(0, 37, 49, 0) 100%),
+		url('/images/services/services-bg-1.jpg');
+	background-image: linear-gradient(180deg, rgb(0, 24, 38) 0%, rgba(0, 37, 49, 0) 100%),
 		image-set(
 			url('/images/services/services-bg-4@2x.webp') 2x,
 			url('/images/services/services-bg-4.webp') 1x,
@@ -60,11 +67,13 @@
 		);
 	background-repeat: no-repeat;
 	background-position: 85% 100%;
+	background-color: rgba(2, 15, 8, 0.5);
 	background-size: cover;
 }
 .bg-services__5 {
-	background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)), url('/images/services/services-bg-1.jpg');
-	background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+	background-image: linear-gradient(180deg, rgb(0, 24, 38) 0%, rgba(0, 37, 49, 0) 100%),
+		url('/images/services/services-bg-1.jpg');
+	background-image: linear-gradient(180deg, rgb(0, 24, 38) 0%, rgba(0, 37, 49, 0) 100%),
 		image-set(
 			url('/images/services/services-bg-5@2x.webp') 2x,
 			url('/images/services/services-bg-5.webp') 1x,
@@ -73,5 +82,6 @@
 		);
 	background-repeat: no-repeat;
 	background-position: 85% 100%;
+	background-color: rgba(2, 15, 8, 0.5);
 	background-size: cover;
 }

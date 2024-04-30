@@ -1,0 +1,77 @@
+.card-item::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	transform: rotate(45deg) translateY(-50%);
+	background-color: #ffffff;
+}
+
+.bg-services__1 {
+	background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)), url('/images/services/services-bg-1.jpg');
+	background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+		image-set(
+			url('/images/services/services-bg-1@2x.webp') 2x,
+			url('/images/services/services-bg-1.webp') 1x,
+			url('/images/services/services-bg-1@2x.jpg') 2x,
+			url('/images/services/services-bg-1.jpg') 1x
+		);
+	background-repeat: no-repeat;
+	background-position: 77% 100%;
+	background-size: cover;
+}
+.bg-services__2 {
+	background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)), url('/images/services/services-bg-1.jpg');
+	background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+		image-set(
+			url('/images/services/services-bg-2@2x.webp') 2x,
+			url('/images/services/services-bg-2.webp') 1x,
+			url('/images/services/services-bg-2@2x.jpg') 2x,
+			url('/images/services/services-bg-2.jpg') 1x
+		);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.bg-services__3 {
+	background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)), url('/images/services/services-bg-1.jpg');
+	background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+		image-set(
+			url('/images/services/services-bg-3@2x.webp') 2x,
+			url('/images/services/services-bg-3.webp') 1x,
+			url('/images/services/services-bg-3@2x.jpg') 2x,
+			url('/images/services/services-bg-3.jpg') 1x
+		);
+	background-repeat: no-repeat;
+	background-position: 68% 100%;
+	background-size: cover;
+}
+.bg-services__4 {
+	background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)), url('/images/services/services-bg-1.jpg');
+	background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+		image-set(
+			url('/images/services/services-bg-4@2x.webp') 2x,
+			url('/images/services/services-bg-4.webp') 1x,
+			url('/images/services/services-bg-4@2x.jpg') 2x,
+			url('/images/services/services-bg-4.jpg') 1x
+		);
+	background-repeat: no-repeat;
+	background-position: 85% 100%;
+	background-size: cover;
+}
+.bg-services__5 {
+	background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)), url('/images/services/services-bg-1.jpg');
+	background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+		image-set(
+			url('/images/services/services-bg-5@2x.webp') 2x,
+			url('/images/services/services-bg-5.webp') 1x,
+			url('/images/services/services-bg-5@2x.jpg') 2x,
+			url('/images/services/services-bg-5.jpg') 1x
+		);
+	background-repeat: no-repeat;
+	background-position: 85% 100%;
+	background-size: cover;
+}

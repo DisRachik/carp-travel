@@ -22,35 +22,40 @@
 				"title": "ATVs Traveling",
 				"action": "Feel the adrenaline rush",
 				"description": "Join exciting rafting expeditions on the waterways of the Carpathians. Go through challenging waterways and overcome gusty waves, feel the adrenaline, and enjoy the incredible views of the surrounding mountains.",
-				"image": "/images/services/services-card-1.jpg"
+				"image": "/images/services/services-card-1.jpg",
+				"background": "/images/services/services-bg-1.jpg"
 			},
 			{
 				"id": "2",
 				"title": "Rock climbing",
 				"action": "Destroy your limitations",
 				"description": "Overcome the peaks of the Carpathians in a unique way - climbing. Make your own way to the heights and find inner peace in the embrace of the mighty rocks.",
-				"image": "/images/services/services-card-2.jpg"
+				"image": "/images/services/services-card-2.jpg",
+				"background": "/images/services/services-bg-2.jpg"
 			},
 			{
 				"id": "3",
 				"title": "Hot air ballooning",
 				"action": "Get inspired",
 				"description": "Feel Zen over the mountain peaks! Hot air ballooning gives you incredible impressions and panoramas of the Carpathians that seem endless.",
-				"image": "/images/services/services-card-3.jpg"
+				"image": "/images/services/services-card-3.jpg",
+				"background": "/images/services/services-bg-3.jpg"
 			},
 			{
 				"id": "4",
 				"title": "Skydiving",
 				"action": "Overcome your fears",
 				"description": "Fly in the sky over the Carpathians! Experienced instructors will help you realize your dream of free flight. Remember the incredible emotions and panoramas from a bird's eye view forever.",
-				"image": "/images/services/services-card-4.jpg"
+				"image": "/images/services/services-card-4.jpg",
+				"background": "/images/services/services-bg-4.jpg"
 			},
 			{
 				"id": "5",
 				"title": "Rafting",
 				"action": "Trust the flow",
 				"description": "Join exciting rafting expeditions on the waterways of the Carpathians. Go through challenging waterways and overcome gusty waves, feel the adrenaline, and enjoy the incredible views of the surrounding mountains.",
-				"image": "/images/services/services-card-5.jpg"
+				"image": "/images/services/services-card-5.jpg",
+				"background": "/images/services/services-bg-1.jpg"
 			}
 		]
 	},

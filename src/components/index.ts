@@ -10,3 +10,4 @@ export { default as ButtonScroll } from './buttons/button-scroll';
 
 export { default as HtmlElFactory } from './html-el-factory';
 export { default as InfoAboutUs } from './info-about-us';
+export { default as ServicesCard } from './services-card';

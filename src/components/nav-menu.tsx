@@ -2,9 +2,9 @@
 
 import { useEffect, useState } from 'react';
 import clsx from 'clsx';
-import { NavItem, BurgerMenuBtn } from '@/components';
-import { sectionName } from '@/constants';
 import { useScreenSize } from '@/hooks';
+import { sectionName } from '@/constants';
+import { NavItem, BurgerMenuBtn } from '@/components';
 
 const NavMenu = () => {
 	const [isMobileOpen, setIsMobileOpen] = useState<boolean>(false);

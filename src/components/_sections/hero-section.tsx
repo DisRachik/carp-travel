@@ -1,7 +1,7 @@
+import content from '@/data/content.json';
 import { Section, Container, Title, ButtonScroll } from '@/components';
 import { section } from '@/components/section';
 
-import content from '@/data/content.json';
 const { title, slogan, places, text } = content.hero;
 
 const HeroSection = () => {

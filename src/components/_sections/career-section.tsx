@@ -1,7 +1,7 @@
+import content from '@/data/content.json';
 import { Section, Container, Title } from '@/components';
 import { section } from '@/components/section';
 
-import content from '@/data/content.json';
 const { title, subtitle, text, theses } = content.career;
 
 const CareerSection = () => {

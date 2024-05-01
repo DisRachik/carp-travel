@@ -15,3 +15,5 @@ export { default as ServicesCard } from './services-card';
 export { default as Gallery } from './gallery-navigation';
 export { default as GalleryNavigation } from './gallery-navigation';
 export { default as SliderNavButton } from './buttons/slider-nav-button';
+
+export { default as ContactsBlock } from './contacts-block';

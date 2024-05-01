@@ -1,13 +1,13 @@
 'use client';
 
-import { Section, ServicesCard } from '@/components';
-import { section } from '@/components/section';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFade, Pagination, A11y } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
-
 import content from '@/data/content.json';
+import { Section, ServicesCard } from '@/components';
+import { section } from '@/components/section';
+
 const { title: sectionName, cards } = content.services;
 const cardsName = cards.map(({ id, title }) => ({ id, title }));
 

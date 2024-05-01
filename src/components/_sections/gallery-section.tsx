@@ -2,16 +2,14 @@
 
 import clsx from 'clsx';
 import Image from 'next/image';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import content from '@/data/content.json';
+import { useScreenSize } from '@/hooks';
+import '@/styles/gallery-section.css';
 import { Section, Container, Title, GalleryNavigation } from '@/components';
 import { section } from '@/components/section';
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import { useScreenSize } from '@/hooks';
-import { Navigation } from 'swiper/modules';
-import '@/styles/gallery-section.css';
-
-import content from '@/data/content.json';
 const { title, cards } = content.gallery;
 const images = [...cards, ...cards];
 

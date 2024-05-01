@@ -1,8 +1,8 @@
 'use client';
 
-import { SliderNavButton } from '@/components';
 import clsx from 'clsx';
 import { useSwiper } from 'swiper/react';
+import { SliderNavButton } from '@/components';
 
 export interface IGalleryNavigationProps {
 	className?: string;

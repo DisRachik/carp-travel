@@ -1,10 +1,9 @@
 'use client';
 
 import { Button } from 'react-scroll';
-import { section } from '@/components/section';
 import clsx from 'clsx';
-
 import styles from '@/styles/button-scroll.module.css';
+import { section } from '@/components/section';
 
 export interface IButtonScrollProps {
 	scrollTo: section;

@@ -1,9 +1,9 @@
 import { Fragment } from 'react';
+import clsx from 'clsx';
+import content from '@/data/content.json';
 import { Section, Container, Title, InfoAboutUs } from '@/components';
 import { section } from '@/components/section';
 
-import content from '@/data/content.json';
-import clsx from 'clsx';
 const { title, text, motto } = content.about;
 
 const AboutSection = () => {

@@ -1,8 +1,8 @@
 import clsx from 'clsx';
 import { prepareText } from '@/helpers';
-import { HtmlElFactory } from '@/components/';
 import { section } from '@/components/section';
 import { IHtmlElFactoryProps } from '@/components/html-el-factory';
+import { HtmlElFactory } from '@/components/';
 
 export interface ITitleProps extends IHtmlElFactoryProps {
 	sectionName: section;

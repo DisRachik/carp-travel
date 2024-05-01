@@ -2,12 +2,11 @@
 
 import Image from 'next/image';
 import clsx from 'clsx';
-import styles from '@/styles/services-card.module.css';
 import { useSwiper } from 'swiper/react';
-
 import 'swiper/css/effect-fade';
-import Title from './title';
-import { section } from './section';
+import styles from '@/styles/services-card.module.css';
+import { section } from '@/components/section';
+import { Title } from '@/components';
 
 interface Card {
 	id: string;

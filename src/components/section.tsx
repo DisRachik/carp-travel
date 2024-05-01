@@ -12,8 +12,8 @@ export enum section {
 }
 
 export interface ISectionProps {
-	className: string;
 	sectionTitle: section;
+	className?: string;
 	elementName?: string;
 	children: React.ReactNode;
 }

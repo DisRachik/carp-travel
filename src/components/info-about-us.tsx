@@ -1,7 +1,5 @@
-// import styles from "./InfoAboutUs.module.css"
-
-import { prepareText } from '@/helpers';
 import clsx from 'clsx';
+import { prepareText } from '@/helpers';
 
 export interface IInfoAboutUsProps {
 	numberHighlightedWords?: number;

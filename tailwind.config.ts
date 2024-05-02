@@ -12,7 +12,7 @@ const config: Config = {
 			current: 'currentColor',
 			white: '#ffffff',
 			light: '#D9D9D9',
-			error: '#FF5757',
+			errorColor: '#FF5757',
 			mobMenu: '#010A05',
 			bgColor: '#020F08',
 		},

@@ -67,7 +67,11 @@ const ContactsBlock = ({ type, data, alignLabelLeft = false }: IContactsBlockPro
 			<ul className='min-w-20'>
 				{data.list.map((item, el) => (
 					<li key={el}>
-						<LinkEl value={item} type={type} className='text-sm/6 md:text-base xl:text-lg/6' />
+						<LinkEl
+							value={item}
+							type={type}
+							className='text-sm/6 hover:underline focus:underline md:text-base xl:text-lg/6'
+						/>
 					</li>
 				))}
 			</ul>

@@ -21,3 +21,4 @@ export { default as ContactForm } from './contact-form';
 export { default as FormButton } from './buttons/form-button';
 
 export { default as CustomInput } from './custom-input';
+export { default as CustomTextarea } from './custom-textarea';

@@ -1,0 +1,5 @@
+.error-message::before {
+	content: url(/icons/error-icon.svg);
+	width: 18px;
+	height: 18px;
+}

@@ -1,4 +1,4 @@
-import { HeroSection, AboutSection, ServicesSection, CareerSection, GallerySection } from '@/components/_sections';
+import { HeroSection, AboutSection, ServicesSection, CareerSection, GallerySection } from '@/components/sections';
 
 export default function Home() {
 	return (

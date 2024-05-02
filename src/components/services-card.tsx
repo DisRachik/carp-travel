@@ -60,7 +60,7 @@ const ServicesCard: React.FC<IServicesCardProps> = ({ data, card, currentCard, s
 								type='button'
 								onClick={() => swiper.slideTo(i)}
 								className={clsx(
-									'relative max-w-52 text-left text-xl font-extralight uppercase leading-[0.85] md:max-w-full md:text-[22px] md:leading-[0.82] xl:w-72 xl:text-[28px]',
+									'relative max-w-52 text-left text-xl font-extralight uppercase leading-[0.85] hover:translate-x-2 hover:font-light focus:translate-x-2 focus:font-light md:max-w-full md:text-[22px] md:leading-[0.82] xl:w-72 xl:text-[28px]',
 									currentCard === i && styles['card-item'],
 									currentCard === i && 'px-[16.48px] font-medium md:px-[14px]',
 								)}

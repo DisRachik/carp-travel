@@ -17,6 +17,7 @@ const ContactsSection = () => {
 					<ContactsBlock type={contactsValue.Email} data={contacts.emails} />
 					<ContactsBlock type={contactsValue.Link} data={contacts.socials} alignLabelLeft />
 				</div>
+
 				<ContactForm />
 			</Container>
 		</Section>

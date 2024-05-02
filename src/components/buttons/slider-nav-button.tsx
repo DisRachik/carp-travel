@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 
-export interface ISliderNavButtonsProps {
+export interface ISliderNavButtonsProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 	onClick: () => void;
 	className?: string;
 	children: string;

@@ -1,5 +1,5 @@
 import content from '@/data/content.json';
-import { Section, Container, Title, ContactsBlock } from '@/components';
+import { Section, Container, Title, ContactsBlock, ContactForm } from '@/components';
 import { section } from '@/components/section';
 import { contactsValue } from '@/components/contacts-block';
 
@@ -17,7 +17,7 @@ const ContactsSection = () => {
 					<ContactsBlock type={contactsValue.Email} data={contacts.emails} />
 					<ContactsBlock type={contactsValue.Link} data={contacts.socials} alignLabelLeft />
 				</div>
-				<div className='w-[270px]'>Test</div>
+				<ContactForm />
 			</Container>
 		</Section>
 	);

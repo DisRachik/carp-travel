@@ -1,8 +1,7 @@
 import clsx from 'clsx';
 
-export interface IBurgerMenuBtnProps {
+export interface IBurgerMenuBtnProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 	isOpen: boolean;
-	onClick: () => void;
 }
 
 const BurgerMenuBtn = ({ isOpen, onClick }: IBurgerMenuBtnProps) => {

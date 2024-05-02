@@ -19,3 +19,5 @@ export { default as SliderNavButton } from './buttons/slider-nav-button';
 export { default as ContactsBlock } from './contacts-block';
 export { default as ContactForm } from './contact-form';
 export { default as FormButton } from './buttons/form-button';
+
+export { default as CustomInput } from './custom-input';

@@ -48,7 +48,7 @@ const ContactForm = () => {
 			<CustomTextarea
 				{...register(FieldType.MESSAGE)}
 				label='Message'
-				className='md:col-span-2 md:col-start-2 md:row-start-1 md:row-end-4 xl:col-start-1 xl:row-auto'
+				className='h-[221px] md:col-span-2 md:col-start-2 md:row-start-1 md:row-end-4 md:h-[249px] xl:col-start-1 xl:row-auto xl:h-[202px]'
 			/>
 
 			<FormButton className='md:col-start-3 xl:col-start-2 xl:mt-[-16px]'>SEND</FormButton>

@@ -4,6 +4,7 @@ export enum FieldType {
 	POSITION = 'position',
 	PHONE = 'phone',
 	MESSAGE = 'message',
+	APPROVAL = 'approval',
 }
 
 export type IFormSchema = {
@@ -46,4 +47,7 @@ export const formSchemas: Record<FieldType, IFormSchema> = {
 		},
 	},
 	[FieldType.MESSAGE]: {},
+	[FieldType.APPROVAL]: {
+		required: 'Required',
+	},
 };

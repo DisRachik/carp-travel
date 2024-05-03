@@ -1,10 +1,11 @@
 'use client';
 
-import { useForm, useFormState } from 'react-hook-form';
+import { Controller, useForm, useFormState } from 'react-hook-form';
 import { FormButton, CustomInput, CustomTextarea, CustomCheckbox } from '@/components';
 import { formSchemas } from '@/helpers';
 import { FieldType } from '@/helpers/form-scheme';
 import { useEffect } from 'react';
+import clsx from 'clsx';
 
 type Form = {
 	name: string;
@@ -12,9 +13,19 @@ type Form = {
 	position: string;
 	phone: string;
 	message: string;
+	approval: boolean;
 };
 
-const CareerForm = () => {
+const defaultValues: Form = {
+	name: '',
+	email: '',
+	position: '',
+	phone: '',
+	message: '',
+	approval: false,
+};
+
+const CareerForm = ({ className }: { className: string }) => {
 	const {
 		register,
 		handleSubmit,
@@ -24,9 +35,7 @@ const CareerForm = () => {
 		setValue,
 		control,
 	} = useForm<Form>({
-		defaultValues: {
-			phone: '',
-		},
+		defaultValues,
 	});
 	const { dirtyFields } = useFormState({
 		control,
@@ -47,7 +56,7 @@ const CareerForm = () => {
 	};
 
 	return (
-		<form onSubmit={handleSubmit(onSubmit)} className=''>
+		<form onSubmit={handleSubmit(onSubmit)} className={clsx('grid gap-4 md:grid-cols-2 md:gap-x-5', className)}>
 			<CustomInput
 				label='Full name'
 				{...register(FieldType.NAME, formSchemas[FieldType.NAME])}
@@ -79,11 +88,19 @@ const CareerForm = () => {
 				controlUser={dirtyFields.phone}
 			/>
 
-			<CustomTextarea {...register(FieldType.MESSAGE)} label='Message' className='' />
+			<CustomTextarea
+				{...register(FieldType.MESSAGE)}
+				label='Message'
+				className='h-56 md:col-start-2 md:row-span-4 md:row-start-1 md:h-64 xl:h-[268px] xl:w-[292px]'
+			/>
 
-			<CustomCheckbox />
+			<Controller
+				name='approval'
+				control={control}
+				render={({ field }) => <CustomCheckbox checked={field.value} onChange={field.onChange} />}
+			/>
 
-			<FormButton className='md:col-start-3 xl:col-start-2 xl:mt-[-16px]'>SEND</FormButton>
+			<FormButton className=''>SEND</FormButton>
 		</form>
 	);
 };

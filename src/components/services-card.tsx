@@ -72,7 +72,7 @@ const ServicesCard: React.FC<IServicesCardProps> = ({ data, card, currentCard, s
 						</li>
 					))}
 				</ul>
-				<p className='inline-flex min-h-[120px] items-end text-sm font-extralight md:order-6 md:text-[13px] xl:col-start-3 xl:row-start-3 xl:min-h-[168px] xl:text-lg/6'>
+				<p className='inline-flex min-h-[120px] items-end text-sm font-extralight md:order-6 md:text-justify md:text-[13px] xl:col-start-3 xl:row-start-3 xl:min-h-[168px] xl:text-lg/6'>
 					{description}
 				</p>
 			</div>

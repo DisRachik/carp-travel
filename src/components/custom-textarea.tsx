@@ -20,7 +20,7 @@ const CustomTextarea = forwardRef<HTMLTextAreaElement, ICustomTextareaProps>(({ 
 				{...rest}
 				ref={ref}
 				id={id}
-				className='h-[193px] w-full bg-white/5 px-2 py-[6px] text-[13px]/6 font-extralight text-white md:h-[221px] xl:h-[174px] xl:text-xl/6'
+				className='h-[193px] w-full resize-none bg-white/5 px-2 py-[6px] text-[13px]/6 font-extralight text-white md:h-[221px] xl:h-[174px] xl:text-xl/6'
 			/>
 		</div>
 	);

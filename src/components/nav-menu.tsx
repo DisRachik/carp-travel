@@ -11,16 +11,22 @@ const NavMenu = () => {
 	const { isMobile } = useScreenSize();
 
 	useEffect(() => {
-		!isMobile && setIsMobileOpen(false);
+		if (!isMobile) {
+			setIsMobileOpen(false);
+			document.body.classList.remove('overflow-hidden');
+		}
 	}, [isMobile]);
 
-	const toggleMobileMenu = () => setIsMobileOpen(prevState => !prevState);
+	const toggleMobileMenu = () => {
+		setIsMobileOpen(prevState => !prevState);
+		document.body.classList.toggle('overflow-hidden');
+	};
 
 	return (
 		<nav
 			className={clsx(
 				isMobileOpen &&
-					'absolute right-0 top-0 min-h-dvh w-full bg-mobMenu/75 px-5 py-11 text-right backdrop-blur-[25px]',
+					'fixed left-0 top-0 h-dvh w-full overflow-y-auto bg-mobMenu/75 px-5 py-11 text-right backdrop-blur-[25px]',
 			)}
 		>
 			<div className={clsx('h-full', isMobileOpen && 'container space-y-[110px]')}>

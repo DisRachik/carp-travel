@@ -8,11 +8,14 @@ export interface ICustomInputProps extends ComponentPropsWithoutRef<'input'> {
 	label?: string;
 	errorMessage?: string;
 	className?: string;
+	textToStartInput?: string;
+	controlUser?: boolean | undefined;
 }
 
 const CustomInput = forwardRef<HTMLInputElement, ICustomInputProps>(
-	({ label, errorMessage, className, ...rest }, ref) => {
+	({ label, errorMessage, className, textToStartInput, controlUser, ...rest }, ref) => {
 		const id = useId();
+
 		return (
 			<div className={clsx(className, 'relative')}>
 				{label ? (
@@ -30,6 +33,8 @@ const CustomInput = forwardRef<HTMLInputElement, ICustomInputProps>(
 					className={clsx(
 						'w-full bg-white/5 px-2 py-[6px] text-[13px]/6 font-extralight text-white xl:text-xl/6',
 						errorMessage && 'text-errorColor',
+						textToStartInput && 'pl-11 xl:pl-[58px]',
+						controlUser && 'pl-[52px] xl:pl-[66px]',
 					)}
 				/>
 				{errorMessage ? (
@@ -41,6 +46,16 @@ const CustomInput = forwardRef<HTMLInputElement, ICustomInputProps>(
 					>
 						<span className=' text-errorColor text-xs/6 font-extralight'>{errorMessage}</span>
 					</div>
+				) : null}
+				{textToStartInput ? (
+					<span
+						className={clsx(
+							'absolute bottom-0 left-0 px-2 py-[6px] text-[13px]/6 font-extralight text-white xl:text-xl/6',
+							controlUser && ' translate-x-[8px]',
+						)}
+					>
+						{textToStartInput}
+					</span>
 				) : null}
 			</div>
 		);

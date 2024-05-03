@@ -17,8 +17,8 @@ const GallerySection = () => {
 	const { isMobile } = useScreenSize();
 
 	return (
-		<Section sectionTitle={section.Gallery} className=''>
-			<Container className=''>
+		<Section sectionTitle={section.Gallery}>
+			<Container>
 				<Title sectionName={section.Gallery} elementName='h2' className='mb-6'>
 					{title}
 				</Title>

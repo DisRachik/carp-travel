@@ -19,8 +19,8 @@ const ContactForm = () => {
 		formState: { errors },
 	} = useForm<Form>();
 
-	const onSubmit = (values: Form) => {
-		console.log(values);
+	const onSubmit = (data: Form) => {
+		console.log(data);
 		reset();
 	};
 

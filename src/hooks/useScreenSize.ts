@@ -1,17 +1,17 @@
 import { useEffect, useState } from 'react';
 
-type UseScreenSize = { isMobile: boolean | null; isSmall: boolean | null };
+type UseScreenSize = { isMobile: boolean | null };
 
 export function useScreenSize(): UseScreenSize {
 	const [isMobile, setIsMobile] = useState<boolean | null>(null);
-	const [isSmall, setIsSmall] = useState<boolean | null>(null);
 
 	useEffect(() => {
 		const mobileMediaQuery = window.matchMedia('(max-width: 767px)');
 		setIsMobile(mobileMediaQuery.matches);
 
-		const handleMobileChange = () => {
-			setIsMobile(prevState => !prevState);
+		const handleMobileChange = (e: MediaQueryListEvent) => {
+			console.log('track to isMobile');
+			setIsMobile(prevState => prevState !== e.matches && e.matches);
 		};
 
 		mobileMediaQuery.addEventListener('change', handleMobileChange);
@@ -21,20 +21,5 @@ export function useScreenSize(): UseScreenSize {
 		};
 	}, [isMobile]);
 
-	useEffect(() => {
-		const smallMediaQuery = window.matchMedia('(max-width: 480px)');
-		setIsSmall(smallMediaQuery.matches);
-
-		const handleSmallChange = () => {
-			setIsSmall(prevState => !prevState);
-		};
-
-		smallMediaQuery.addEventListener('change', handleSmallChange);
-
-		return () => {
-			smallMediaQuery.addEventListener('change', handleSmallChange);
-		};
-	}, [isSmall]);
-
-	return { isMobile, isSmall };
+	return { isMobile };
 }

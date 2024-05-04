@@ -26,6 +26,7 @@ const ContactForm = () => {
 
 	return (
 		<form
+			name='contact'
 			onSubmit={handleSubmit(onSubmit)}
 			className='grid gap-5 md:grid-cols-3 md:gap-y-7 xl:grid-cols-2 xl:gap-x-7 xl:gap-y-10'
 		>

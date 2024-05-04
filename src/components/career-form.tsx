@@ -56,7 +56,11 @@ const CareerForm = ({ className }: { className: string }) => {
 	};
 
 	return (
-		<form onSubmit={handleSubmit(onSubmit)} className={clsx('grid gap-4 md:grid-cols-2 md:gap-x-5', className)}>
+		<form
+			name='career'
+			onSubmit={handleSubmit(onSubmit)}
+			className={clsx('grid gap-4 md:grid-cols-2 md:gap-x-5', className)}
+		>
 			<CustomInput
 				label='Full name'
 				{...register(FieldType.NAME, formSchemas[FieldType.NAME])}
@@ -80,6 +84,7 @@ const CareerForm = ({ className }: { className: string }) => {
 			/>
 			<CustomInput
 				label='Phone'
+				type='number'
 				{...register(FieldType.PHONE, formSchemas[FieldType.PHONE])}
 				placeholder='(097) 12 34 567'
 				errorMessage={errors.phone?.message}

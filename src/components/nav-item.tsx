@@ -20,7 +20,7 @@ const NavItem = ({ id, title, onClick, isMobileOpen }: INavItemProps) => {
 				onClick={() => {
 					isMobileOpen && onClick();
 				}}
-				className='text-lg capitalize tracking-widest md:text-sm'
+				className='text-lg capitalize tracking-widest hover:animate-bounce focus:animate-bounce md:text-sm'
 			>
 				{title}
 			</Link>

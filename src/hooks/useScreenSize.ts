@@ -10,7 +10,6 @@ export function useScreenSize(): UseScreenSize {
 		setIsMobile(mobileMediaQuery.matches);
 
 		const handleMobileChange = (e: MediaQueryListEvent) => {
-			console.log('track to isMobile');
 			setIsMobile(prevState => prevState !== e.matches && e.matches);
 		};
 

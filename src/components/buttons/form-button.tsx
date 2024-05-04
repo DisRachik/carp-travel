@@ -10,7 +10,11 @@ const FormButton: React.FC<IFormButtonProps> = ({ disabled, className, ...rest }
 		<button
 			{...rest}
 			type='submit'
-			className={clsx('inline-block justify-self-end text-3xl font-medium xl:text-[32px]', className, disabled && '')}
+			className={clsx(
+				'inline-block justify-self-end text-3xl font-medium hover:animate-bounce focus:animate-bounce xl:text-[32px]',
+				className,
+				disabled && '',
+			)}
 		/>
 	);
 };

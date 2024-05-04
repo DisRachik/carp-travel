@@ -21,7 +21,10 @@ const CustomInput = forwardRef<HTMLInputElement, ICustomInputProps>(
 				{label ? (
 					<label
 						htmlFor={id}
-						className={clsx('mb-1 text-xs/6 font-extralight tracking-[2.4px]', errorMessage && 'text-errorColor')}
+						className={clsx(
+							'mb-1 text-xs/6 font-extralight tracking-[2.4px] transition-colors',
+							errorMessage && 'text-errorColor',
+						)}
 					>
 						{label}
 					</label>
@@ -31,7 +34,7 @@ const CustomInput = forwardRef<HTMLInputElement, ICustomInputProps>(
 					ref={ref}
 					id={id}
 					className={clsx(
-						'w-full bg-white/5 px-2 py-[6px] text-[13px]/6 font-extralight md:py-0 xl:py-[2px] xl:text-xl/6',
+						'w-full bg-white/5 px-2 py-[6px] text-[13px]/6 font-extralight transition-all md:py-0 xl:py-[2px] xl:text-xl/6',
 						errorMessage && 'text-errorColor',
 						textToStartInput && 'pl-11 xl:pl-[58px]',
 						controlUser && 'pl-[52px] xl:pl-[66px]',
@@ -50,7 +53,7 @@ const CustomInput = forwardRef<HTMLInputElement, ICustomInputProps>(
 				{textToStartInput ? (
 					<span
 						className={clsx(
-							'absolute bottom-0 left-0 px-2 py-[6px] text-[13px]/6 font-extralight text-white md:py-0 xl:py-[2px] xl:text-xl/6',
+							'absolute bottom-0 left-0 px-2 py-[6px] text-[13px]/6 font-extralight text-white transition-transform md:py-[2px] xl:text-xl/6',
 							controlUser && 'translate-x-[8px]',
 						)}
 					>

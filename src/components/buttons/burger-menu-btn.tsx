@@ -10,7 +10,10 @@ const BurgerMenuBtn = ({ isOpen, onClick }: IBurgerMenuBtnProps) => {
 			type='button'
 			onClick={onClick}
 			aria-label={isOpen ? 'close Menu' : 'open Menu'}
-			className={clsx('text-sm uppercase leading-normal tracking-widest md:hidden', !isOpen && 'h-full')}
+			className={clsx(
+				'text-sm uppercase leading-normal tracking-widest hover:animate-bounce focus:animate-bounce md:hidden',
+				!isOpen && 'h-full',
+			)}
 		>
 			{isOpen ? 'CLOSE' : 'MENU'}
 		</button>

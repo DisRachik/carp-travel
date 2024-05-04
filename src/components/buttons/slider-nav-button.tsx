@@ -9,7 +9,11 @@ export interface ISliderNavButtonsProps extends React.ButtonHTMLAttributes<HTMLB
 const SliderNavButton: React.FC<ISliderNavButtonsProps> = ({ onClick, className, children }) => {
 	return (
 		<div className={clsx('text-[33px] font-thin uppercase', className)}>
-			<button type='button' onClick={onClick}>
+			<button
+				type='button'
+				onClick={onClick}
+				className='hover:animate-bounce hover:font-light focus:animate-bounce focus:font-light'
+			>
 				{children}
 			</button>
 		</div>

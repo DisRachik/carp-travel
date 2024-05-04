@@ -19,7 +19,7 @@ const ButtonScroll: React.FC<IButtonScrollProps> = ({ scrollTo, className, child
 			duration={500}
 			type='button'
 			className={clsx(
-				'flex h-[53px] items-center justify-between bg-white/10 text-lg uppercase leading-[2.67] hover:bg-white/20 focus:bg-white/20 md:h-[50px] xl:h-[71px]',
+				'flex h-[53px] items-center justify-between bg-white/10 text-lg uppercase leading-[2.67] transition-colors hover:bg-white/20 focus:bg-white/20 md:h-[50px] xl:h-[71px]',
 				styles['hero-button'],
 				className,
 			)}

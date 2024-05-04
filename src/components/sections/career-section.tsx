@@ -1,7 +1,7 @@
-import content from '@/data/content.json';
-import { Section, Container, Title, QASession, CareerForm } from '@/components';
-import { section } from '@/components/section';
 import clsx from 'clsx';
+import content from '@/data/content.json';
+import { section } from '@/components/section';
+import { Section, Container, Title, QASession, CareerForm } from '@/components';
 
 const { title, subtitle, text, theses } = content.career;
 

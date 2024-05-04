@@ -1,11 +1,11 @@
 'use client';
 
+import { useEffect } from 'react';
 import { Controller, useForm, useFormState } from 'react-hook-form';
-import { FormButton, CustomInput, CustomTextarea, CustomCheckbox } from '@/components';
+import clsx from 'clsx';
 import { formSchemas } from '@/helpers';
 import { FieldType } from '@/helpers/form-scheme';
-import { useEffect } from 'react';
-import clsx from 'clsx';
+import { FormButton, CustomInput, CustomTextarea, CustomCheckbox } from '@/components';
 
 type Form = {
 	name: string;

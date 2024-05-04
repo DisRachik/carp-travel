@@ -1,8 +1,8 @@
 'use client';
 
 import { ComponentPropsWithoutRef, forwardRef, useId } from 'react';
-import styles from '@/styles/custom-input.module.css';
 import clsx from 'clsx';
+import styles from '@/styles/custom-input.module.css';
 
 export interface ICustomInputProps extends ComponentPropsWithoutRef<'input'> {
 	label?: string;

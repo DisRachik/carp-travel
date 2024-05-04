@@ -1,5 +1,3 @@
-import clsx from 'clsx';
-
 export interface ICustomCheckboxProps {
 	checked: boolean;
 	onChange: (val: boolean) => void;

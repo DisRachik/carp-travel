@@ -15,7 +15,7 @@ const ServicesSection = () => {
 	return (
 		<Section sectionTitle={section.Services} className='pb-0 pt-0 md:pb-0 md:pt-0 xl:pb-0 xl:pt-0'>
 			<Swiper effect={'fade'} modules={[EffectFade, Pagination, A11y]} onSwiper={() => {}} className='mySwiper'>
-				{cards.map((card, i, arr) => (
+				{cards.map((card, i) => (
 					<SwiperSlide key={card.id}>
 						<ServicesCard data={cardsName} card={card} sectionName={sectionName} currentCard={i} />
 					</SwiperSlide>

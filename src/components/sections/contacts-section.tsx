@@ -1,7 +1,7 @@
 import content from '@/data/content.json';
+import { contactsValue } from '@/components/contacts-block';
 import { Section, Container, Title, ContactsBlock, ContactForm } from '@/components';
 import { section } from '@/components/section';
-import { contactsValue } from '@/components/contacts-block';
 
 const { title, contacts } = content.contacts;
 

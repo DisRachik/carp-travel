@@ -1,11 +1,13 @@
+import { FC, ReactNode } from 'react';
+
 export interface IHtmlElFactoryProps {
 	elementName: string;
 	className?: string;
-	children: React.ReactNode;
+	children: ReactNode;
 	idAnchor?: string;
 }
 
-const HtmlElFactory: React.FC<IHtmlElFactoryProps> = ({ elementName, className, children, idAnchor }) => {
+const HtmlElFactory: FC<IHtmlElFactoryProps> = ({ elementName, className, children, idAnchor }) => {
 	switch (elementName) {
 		case 'h1':
 			return <h1 className={className}>{children}</h1>;

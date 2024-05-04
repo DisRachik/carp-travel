@@ -6,6 +6,7 @@ import clsx from 'clsx';
 import { formSchemas } from '@/helpers';
 import { FieldType } from '@/helpers/form-scheme';
 import { FormButton, CustomInput, CustomTextarea, CustomCheckbox } from '@/components';
+import toast from 'react-hot-toast';
 
 type Form = {
 	name: string;
@@ -52,6 +53,17 @@ const CareerForm = ({ className }: { className: string }) => {
 
 	const onSubmit = (data: Form) => {
 		console.log(data);
+		toast.success(`Dear ${data.name}, your message has been sent. So, NOW, we can observe for you)))`, {
+			style: {
+				borderRadius: '10px',
+				background: '#333',
+				color: '#fff',
+			},
+			iconTheme: {
+				primary: '#713200',
+				secondary: '#FFFAEE',
+			},
+		});
 		reset();
 	};
 

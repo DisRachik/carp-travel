@@ -1,5 +1,6 @@
-import { transformPhoneNumber } from '@/helpers';
+import { FC } from 'react';
 import clsx from 'clsx';
+import { transformPhoneNumber } from '@/helpers';
 
 export const enum contactsValue {
 	Phone = 'phone',
@@ -23,7 +24,7 @@ export interface ILinkElProps {
 	className?: string;
 }
 
-const LinkEl: React.FC<ILinkElProps> = ({ value, type, className }) => {
+const LinkEl: FC<ILinkElProps> = ({ value, type, className }) => {
 	return (
 		<>
 			{typeof value === 'string' && type === contactsValue.Phone && (

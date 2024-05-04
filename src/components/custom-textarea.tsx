@@ -1,7 +1,7 @@
 'use client';
 
-import clsx from 'clsx';
 import { ComponentPropsWithoutRef, forwardRef, useId } from 'react';
+import clsx from 'clsx';
 
 export interface ICustomTextareaProps extends ComponentPropsWithoutRef<'textarea'> {
 	label: string;
@@ -10,6 +10,7 @@ export interface ICustomTextareaProps extends ComponentPropsWithoutRef<'textarea
 
 const CustomTextarea = forwardRef<HTMLTextAreaElement, ICustomTextareaProps>(({ label, className, ...rest }, ref) => {
 	const id = useId();
+
 	return (
 		<div className={clsx('flex flex-col', className)}>
 			{label ? (

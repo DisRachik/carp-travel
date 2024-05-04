@@ -1,3 +1,4 @@
+import { FC, ReactNode } from 'react';
 import clsx from 'clsx';
 import styles from '@/styles/section.module.css';
 import { HtmlElFactory } from '@/components/';
@@ -15,10 +16,10 @@ export interface ISectionProps {
 	sectionTitle: section;
 	className?: string;
 	elementName?: string;
-	children: React.ReactNode;
+	children: ReactNode;
 }
 
-const Section: React.FC<ISectionProps> = ({ sectionTitle, elementName = 'section', className, children }) => {
+const Section: FC<ISectionProps> = ({ sectionTitle, elementName = 'section', className, children }) => {
 	return (
 		<HtmlElFactory
 			idAnchor={sectionTitle}

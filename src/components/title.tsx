@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import clsx from 'clsx';
 import { prepareText } from '@/helpers';
 import { section } from '@/components/section';
@@ -9,7 +10,7 @@ export interface ITitleProps extends IHtmlElFactoryProps {
 	children: string;
 }
 
-const Title: React.FC<ITitleProps> = ({ sectionName, elementName, className, children }) => {
+const Title: FC<ITitleProps> = ({ sectionName, elementName, className, children }) => {
 	const [firstWordOfTitle, nextTitle] = prepareText(children);
 
 	return (

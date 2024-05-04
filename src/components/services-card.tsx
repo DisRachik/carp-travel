@@ -1,5 +1,6 @@
 'use client';
 
+import { FC } from 'react';
 import Image from 'next/image';
 import clsx from 'clsx';
 import { useSwiper } from 'swiper/react';
@@ -24,7 +25,7 @@ export interface IServicesCardProps {
 	sectionName: string;
 }
 
-const ServicesCard: React.FC<IServicesCardProps> = ({ data, card, currentCard, sectionName }) => {
+const ServicesCard: FC<IServicesCardProps> = ({ data, card, currentCard, sectionName }) => {
 	const { title, action, description, image } = card;
 	const swiper = useSwiper();
 

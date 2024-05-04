@@ -1,6 +1,8 @@
+import React from 'react';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
+import { Toaster } from 'react-hot-toast';
 import { ContactsSection } from '@/components/sections';
 import { Header } from '@/components';
 
@@ -27,6 +29,7 @@ export default function RootLayout({
 				<Header />
 				{children}
 				<ContactsSection />
+				<Toaster position='bottom-left' />
 			</body>
 		</html>
 	);

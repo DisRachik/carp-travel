@@ -1,9 +1,10 @@
 'use client';
 
 import { useForm } from 'react-hook-form';
-import { FormButton, CustomInput, CustomTextarea } from '@/components';
-import { formSchemas } from '@/helpers';
+import toast from 'react-hot-toast';
 import { FieldType } from '@/helpers/form-scheme';
+import { formSchemas } from '@/helpers';
+import { FormButton, CustomInput, CustomTextarea } from '@/components';
 
 type Form = {
 	name: string;
@@ -21,6 +22,17 @@ const ContactForm = () => {
 
 	const onSubmit = (data: Form) => {
 		console.log(data);
+		toast.success(`Dear ${data.name}, your message has been sent.`, {
+			style: {
+				borderRadius: '10px',
+				background: '#333',
+				color: '#fff',
+			},
+			iconTheme: {
+				primary: '#713200',
+				secondary: '#FFFAEE',
+			},
+		});
 		reset();
 	};
 

@@ -96,7 +96,6 @@ const CareerForm = ({ className }: { className: string }) => {
 			/>
 			<CustomInput
 				label='Phone'
-				type='number'
 				{...register(FieldType.PHONE, formSchemas[FieldType.PHONE])}
 				placeholder='(097) 12 34 567'
 				errorMessage={errors.phone?.message}
